@@ -1,0 +1,13 @@
+{
+  "training_seconds": 10.381307458039373,
+  "timesteps": 100096,
+  "seed": 0,
+  "device": "cpu",
+  "trainable_parameters": 9155,
+  "validation": {
+    "episodes": 20,
+    "mean_return": 500.0,
+    "std_return": 0.0,
+    "survival_rate": 1.0
+  }
+}

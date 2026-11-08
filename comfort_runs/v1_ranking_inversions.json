@@ -1,0 +1,50 @@
+[
+  {
+    "policy": {
+      "seed": 9007,
+      "amplitude": 0.0,
+      "period": 4.0,
+      "smoothing": 1.0,
+      "steps": 500,
+      "survived": true,
+      "ordinary_return": 492.2013520187592,
+      "actual_return": 492.2013520187592,
+      "raw_cost_sum": 8.255119742834175,
+      "clipped_excess_sum": 0.45647176159321345,
+      "clipped_fraction": 0.002,
+      "head_acc_rms": 0.09783671952656733,
+      "head_acc_max": 0.708579968528268,
+      "head_jerk_rms": 3.1591372091163117,
+      "head_jerk_max": 68.92385997527053,
+      "band_acc_rms": 0.04357792683941255,
+      "band_acc_max": 0.16037770160567452,
+      "omega_rms": 0.05710996718974858,
+      "omega_max": 0.3289110810907836,
+      "theta_rms": 0.012539492712144149,
+      "theta_max": 0.05741749487070877
+    },
+    "smoother": {
+      "seed": 9007,
+      "amplitude": 0.0,
+      "period": 4.0,
+      "smoothing": 0.5,
+      "steps": 500,
+      "survived": true,
+      "ordinary_return": 492.15073841639895,
+      "actual_return": 492.15073841639895,
+      "raw_cost_sum": 7.8492615836011606,
+      "clipped_excess_sum": 0.0,
+      "clipped_fraction": 0.0,
+      "head_acc_rms": 0.09846062260368421,
+      "head_acc_max": 0.4867123508313327,
+      "head_jerk_rms": 1.8251539677390927,
+      "head_jerk_max": 34.46192998763527,
+      "band_acc_rms": 0.04421724364019899,
+      "band_acc_max": 0.17083631114855394,
+      "omega_rms": 0.06795745102008852,
+      "omega_max": 0.3745729877903585,
+      "theta_rms": 0.013874611098373436,
+      "theta_max": 0.06744720695987329
+    }
+  }
+]

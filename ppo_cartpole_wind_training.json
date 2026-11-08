@@ -1,0 +1,584 @@
+{
+  "training_seconds": 21.728535292029846,
+  "timesteps": 200192,
+  "seed": 0,
+  "observation_fields": [
+    "x_m",
+    "xdot_m_per_s",
+    "theta_rad",
+    "thetadot_rad_per_s",
+    "pole_wind_force_N"
+  ],
+  "training_amplitude_range_N": [
+    0,
+    0.15
+  ],
+  "training_period_range_s": [
+    2,
+    8
+  ],
+  "training_phase_range_rad": [
+    0,
+    6.283185307179586
+  ],
+  "validation": {
+    "no_wind": {
+      "mean_reward": 500.0,
+      "survival_rate": 1.0,
+      "episodes": [
+        {
+          "seed": 7000,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7001,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7002,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7003,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7004,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7005,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7006,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7007,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7008,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7009,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7010,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7011,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7012,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7013,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7014,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7015,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7016,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7017,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7018,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7019,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        }
+      ]
+    },
+    "wind_0.15N_period4s": {
+      "mean_reward": 203.95,
+      "survival_rate": 0.0,
+      "episodes": [
+        {
+          "seed": 7000,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 37,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7001,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 147,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7002,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 152,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7003,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 144,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7004,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 36,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7005,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 147,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7006,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 243,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7007,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 162,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7008,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 149,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7009,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 350,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7010,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 452,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7011,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 145,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7012,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 145,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7013,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 145,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7014,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 152,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7015,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 352,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7016,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 162,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7017,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 348,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7018,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 350,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7019,
+          "amplitude": 0.15,
+          "period": 4.0,
+          "phase": 0.0,
+          "steps": 261,
+          "survived": false,
+          "reason": "pole_angle"
+        }
+      ]
+    },
+    "random_training_range": {
+      "mean_reward": 452.3,
+      "survival_rate": 0.9,
+      "episodes": [
+        {
+          "seed": 7000,
+          "amplitude": 0.08553474798630707,
+          "period": 6.180682034451337,
+          "phase": 3.301157356567774,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7001,
+          "amplitude": 0.027972818619213396,
+          "period": 4.170574872782011,
+          "phase": 1.075687265948056,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7002,
+          "amplitude": 0.011127402193387948,
+          "period": 4.514422029907864,
+          "phase": 3.4192497585684665,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7003,
+          "amplitude": 0.1452759896549379,
+          "period": 6.0870574997389095,
+          "phase": 1.6820616032877374,
+          "steps": 20,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7004,
+          "amplitude": 0.061722287505107394,
+          "period": 7.6666311314683275,
+          "phase": 2.059315590976768,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7005,
+          "amplitude": 0.0475722992448571,
+          "period": 6.8472629066364705,
+          "phase": 1.2677633182136323,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7006,
+          "amplitude": 0.022390215019089898,
+          "period": 2.064063836588788,
+          "phase": 0.4651878659451035,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7007,
+          "amplitude": 0.044262898972473826,
+          "period": 6.230868150372405,
+          "phase": 3.439652315784493,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7008,
+          "amplitude": 0.12384339483523826,
+          "period": 4.332455776381023,
+          "phase": 4.241633497397268,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7009,
+          "amplitude": 0.05444593700568301,
+          "period": 2.213341154419278,
+          "phase": 4.504657514984554,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7010,
+          "amplitude": 0.1290299984866736,
+          "period": 6.663088062916405,
+          "phase": 0.6955249932072757,
+          "steps": 26,
+          "survived": false,
+          "reason": "pole_angle"
+        },
+        {
+          "seed": 7011,
+          "amplitude": 0.14432896350755775,
+          "period": 6.073816313457513,
+          "phase": 5.952801900850146,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7012,
+          "amplitude": 0.04988301699328024,
+          "period": 7.790838532086224,
+          "phase": 4.338805555963698,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7013,
+          "amplitude": 0.02482873127841852,
+          "period": 7.100004814971131,
+          "phase": 5.053067187480172,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7014,
+          "amplitude": 0.027286757056907994,
+          "period": 5.882241429008203,
+          "phase": 6.1524303390616,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7015,
+          "amplitude": 0.09660537530151249,
+          "period": 6.657022854373171,
+          "phase": 0.3140070439851773,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7016,
+          "amplitude": 0.000947139238193334,
+          "period": 2.697373947207919,
+          "phase": 3.2191403975971347,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7017,
+          "amplitude": 0.10930707447677493,
+          "period": 6.924113878454511,
+          "phase": 2.0076691885384315,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7018,
+          "amplitude": 0.05314769714349042,
+          "period": 5.4362707950878555,
+          "phase": 5.526764415795576,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        },
+        {
+          "seed": 7019,
+          "amplitude": 0.023813834263786682,
+          "period": 4.036182661309227,
+          "phase": 3.20002211834435,
+          "steps": 500,
+          "survived": true,
+          "reason": "time_limit"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "engineering_comfort_v1",
+  "weights": {
+    "head_acc": 0.3,
+    "head_jerk": 0.2,
+    "band_acc": 0.2,
+    "omega": 0.2,
+    "theta": 0.1
+  },
+  "scales": {
+    "head_acc": 1.5,
+    "head_jerk": 20.0,
+    "band_acc": 0.3,
+    "omega": 0.35,
+    "theta": 0.15
+  },
+  "jerk_peak_limit": null,
+  "omega_peak_limit": null,
+  "peak_penalty": 0.0,
+  "cost_cap": 2.0,
+  "failure_penalty": 1000.0
+}

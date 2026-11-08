@@ -1,0 +1,16 @@
+{
+  "from_version": 2,
+  "to_version": 3,
+  "origin": "user_feedback",
+  "reason": "Make physical failure much more costly than ordinary comfort loss.",
+  "changed_parameter": "failure_penalty",
+  "old_value": 1000.0,
+  "new_value": 10000.0,
+  "training_status": "completed",
+  "revision_bonus_credited": true,
+  "model_discovered_defect": false,
+  "note": "V3 continuation complete. Bonus credited once for a live on-policy reproduction of the known failure class; no claim of autonomous discovery.",
+  "revision_bonus": 200000.0,
+  "selected_checkpoint": "/Users/filip/Downloads/hakagon/comfort_runs/v3/comfort_v3_selected.zip",
+  "ledger": "/Users/filip/Downloads/hakagon/comfort_runs/v3/revision_ledger.json"
+}

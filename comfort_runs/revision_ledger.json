@@ -1,0 +1,168 @@
+{
+  "bonus": 100000.0,
+  "training_reward_scale": 0.001,
+  "discount": 0.995,
+  "ordinary_per_step_bounds": [
+    -1,
+    1
+  ],
+  "worst_case_ordinary_episode_bounds": [
+    -3500,
+    500
+  ],
+  "minimum_discounted_bonus_at_last_step": 8198.177029173701,
+  "novelty": "one payout globally per accepted defect class; no repeats after repair",
+  "events": [
+    {
+      "id": "clipped_startup_shock",
+      "transition": 1,
+      "trigger": "startup jerk >40 m/s^3 and positive cost discarded by flat cap; no physical failure",
+      "interpretation": "reproduction of an audited reward-ranking defect; not proof of human nausea or intent",
+      "evidence": {
+        "policy": {
+          "seed": 9007,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "smoothing": 1.0,
+          "steps": 500,
+          "survived": true,
+          "ordinary_return": 492.2013520187592,
+          "actual_return": 492.2013520187592,
+          "raw_cost_sum": 8.255119742834175,
+          "clipped_excess_sum": 0.45647176159321345,
+          "clipped_fraction": 0.002,
+          "head_acc_rms": 0.09783671952656733,
+          "head_acc_max": 0.708579968528268,
+          "head_jerk_rms": 3.1591372091163117,
+          "head_jerk_max": 68.92385997527053,
+          "band_acc_rms": 0.04357792683941255,
+          "band_acc_max": 0.16037770160567452,
+          "omega_rms": 0.05710996718974858,
+          "omega_max": 0.3289110810907836,
+          "theta_rms": 0.012539492712144149,
+          "theta_max": 0.05741749487070877
+        },
+        "smoother": {
+          "seed": 9007,
+          "amplitude": 0.0,
+          "period": 4.0,
+          "smoothing": 0.5,
+          "steps": 500,
+          "survived": true,
+          "ordinary_return": 492.15073841639895,
+          "actual_return": 492.15073841639895,
+          "raw_cost_sum": 7.8492615836011606,
+          "clipped_excess_sum": 0.0,
+          "clipped_fraction": 0.0,
+          "head_acc_rms": 0.09846062260368421,
+          "head_acc_max": 0.4867123508313327,
+          "head_jerk_rms": 1.8251539677390927,
+          "head_jerk_max": 34.46192998763527,
+          "band_acc_rms": 0.04421724364019899,
+          "band_acc_max": 0.17083631114855394,
+          "omega_rms": 0.06795745102008852,
+          "omega_max": 0.3745729877903585,
+          "theta_rms": 0.013874611098373436,
+          "theta_max": 0.06744720695987329
+        }
+      },
+      "reward_before_bonus": -1.0,
+      "revision_bonus": 100000.0,
+      "returned_reward": 99999.0,
+      "training_scale": 0.001,
+      "metrics": {
+        "head_acc": 0.16446702900397933,
+        "head_jerk": 91.47956759904157,
+        "jerk_envelope": 91.47956759904157,
+        "band_acc": 0.007961995101613429,
+        "omega": 0.04834723644714709,
+        "theta": 0.045902647606380534,
+        "theta_signed": -0.045902647606380534,
+        "omega_signed": -0.04834723644714709,
+        "x": 0.013696168732145431,
+        "xdot": -0.02302132862361297,
+        "head_ax": -0.0024251352067952148,
+        "head_ay": 0.1644491482149559,
+        "head_acc_x": -0.0024251352067952148,
+        "head_acc_y": 0.1644491482149559,
+        "head_jerk_x": 90.61596936589804,
+        "head_jerk_y": 12.540230619340543,
+        "band_acc_x": -0.00011740295154712492,
+        "band_acc_y": 0.007961129476719009,
+        "cart_acc": -3.6334119297069516,
+        "angular_acc": 3.6347081259003446,
+        "motor_force": -3.7394481897354126,
+        "wind_force": -0.07575559321722677
+      },
+      "raw_cost": 4.201184039111046,
+      "discarded_cost": 2.2011840391110464,
+      "wind_profile": {
+        "amplitude": 0.12199053588004086,
+        "period": 7.47653346366633,
+        "phase": 3.811604993109835
+      },
+      "old_reward": {
+        "version": 1,
+        "name": "engineering_comfort_v1",
+        "weights": {
+          "head_acc": 0.3,
+          "head_jerk": 0.2,
+          "band_acc": 0.2,
+          "omega": 0.2,
+          "theta": 0.1
+        },
+        "scales": {
+          "head_acc": 1.5,
+          "head_jerk": 20.0,
+          "band_acc": 0.3,
+          "omega": 0.35,
+          "theta": 0.15
+        },
+        "jerk_peak_limit": null,
+        "omega_peak_limit": null,
+        "peak_penalty": 0.0,
+        "cost_cap": 2.0,
+        "failure_penalty": 1000.0,
+        "jerk_memory_tau": 0.0,
+        "jerk_memory_weight": 0.0,
+        "jerk_memory_scale": 20.0
+      },
+      "new_reward": {
+        "version": 2,
+        "name": "engineering_comfort_v2_jerk_memory",
+        "weights": {
+          "head_acc": 0.3,
+          "head_jerk": 0.2,
+          "band_acc": 0.2,
+          "omega": 0.2,
+          "theta": 0.1
+        },
+        "scales": {
+          "head_acc": 1.5,
+          "head_jerk": 20.0,
+          "band_acc": 0.3,
+          "omega": 0.35,
+          "theta": 0.15
+        },
+        "jerk_peak_limit": null,
+        "omega_peak_limit": null,
+        "peak_penalty": 0.0,
+        "cost_cap": 2.0,
+        "failure_penalty": 1000.0,
+        "jerk_memory_tau": 0.5,
+        "jerk_memory_weight": 0.2,
+        "jerk_memory_scale": 20.0
+      },
+      "ppo_timestep": 8,
+      "rollout_position": 0,
+      "environment_index": 0,
+      "ppo_scaled_reward": 99.9990005493164,
+      "ppo_updates_before_credit": 1220,
+      "verified_in_rollout_buffer": true,
+      "raw_advantage_before_normalization": 99.62911987304688,
+      "return_target": 99.70366668701172,
+      "ppo_updates_after_credit": 1230
+    }
+  ],
+  "full_ppo_update_completed": true
+}

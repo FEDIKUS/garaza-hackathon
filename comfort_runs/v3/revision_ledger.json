@@ -1,0 +1,115 @@
+{
+  "bonus": 200000.0,
+  "training_reward_scale": 0.001,
+  "discount": 0.995,
+  "ordinary_episode_bounds": [
+    -10500.0,
+    500
+  ],
+  "minimum_discounted_bonus_at_last_step": 16396.354058347402,
+  "once_globally": true,
+  "full_ppo_update_completed": true,
+  "events": [
+    {
+      "id": "user_v3_failure_penalty",
+      "origin": "user_feedback",
+      "interpretation": "First live stochastic-policy physical failure reproducing the known class behind the user-requested revision; not learned discovery.",
+      "transition": 10099,
+      "episode_step": 263,
+      "old_reward": {
+        "version": 2,
+        "name": "engineering_comfort_v2_jerk_memory",
+        "weights": {
+          "head_acc": 0.3,
+          "head_jerk": 0.2,
+          "band_acc": 0.2,
+          "omega": 0.2,
+          "theta": 0.1
+        },
+        "scales": {
+          "head_acc": 1.5,
+          "head_jerk": 20.0,
+          "band_acc": 0.3,
+          "omega": 0.35,
+          "theta": 0.15
+        },
+        "jerk_peak_limit": null,
+        "omega_peak_limit": null,
+        "peak_penalty": 0.0,
+        "cost_cap": 2.0,
+        "failure_penalty": 1000.0,
+        "jerk_memory_tau": 0.5,
+        "jerk_memory_weight": 0.2,
+        "jerk_memory_scale": 20.0
+      },
+      "new_reward": {
+        "version": 3,
+        "name": "engineering_comfort_v3_failure_priority",
+        "weights": {
+          "head_acc": 0.3,
+          "head_jerk": 0.2,
+          "band_acc": 0.2,
+          "omega": 0.2,
+          "theta": 0.1
+        },
+        "scales": {
+          "head_acc": 1.5,
+          "head_jerk": 20.0,
+          "band_acc": 0.3,
+          "omega": 0.35,
+          "theta": 0.15
+        },
+        "jerk_peak_limit": null,
+        "omega_peak_limit": null,
+        "peak_penalty": 0.0,
+        "cost_cap": 2.0,
+        "failure_penalty": 10000.0,
+        "jerk_memory_tau": 0.5,
+        "jerk_memory_weight": 0.2,
+        "jerk_memory_scale": 20.0
+      },
+      "bonus": 200000.0,
+      "reward_before_bonus": -10001.0,
+      "returned_reward": 189999.0,
+      "metrics": {
+        "head_acc": 2.804086905080061,
+        "head_jerk": 8.987542665284211,
+        "jerk_envelope": 30.64349671533676,
+        "band_acc": 0.8818390807667257,
+        "omega": 0.6554475198954024,
+        "theta": 0.20480989266995542,
+        "theta_signed": -0.20480989266995542,
+        "omega_signed": -0.6554475198954024,
+        "x": -1.9641930417211426,
+        "xdot": -1.5319510313013616,
+        "head_ax": -2.6880824835314017,
+        "head_ay": -0.7981954227964022,
+        "head_acc_x": -2.6880824835314017,
+        "head_acc_y": -0.7981954227964022,
+        "head_jerk_x": -7.333938968292264,
+        "head_jerk_y": -5.195119090999572,
+        "band_acc_x": -0.854428015953122,
+        "band_acc_y": -0.21815803886612878,
+        "cart_acc": -0.9578256270317491,
+        "angular_acc": -1.8564317179248135,
+        "motor_force": -1.1215025186538696,
+        "wind_force": -0.018618513906036985
+      },
+      "wind_profile": {
+        "amplitude": 0.137679208008062,
+        "period": 7.035545421581613,
+        "phase": 1.4678884579862514
+      },
+      "physical_failure": true,
+      "ppo_timestep": 511864,
+      "rollout_position": 238,
+      "environment_index": 2,
+      "ppo_scaled_reward": 189.99899291992188,
+      "ppo_updates_before_credit": 3710,
+      "verified_in_rollout_buffer": true,
+      "raw_advantage": 190.6519317626953,
+      "return_target": 189.99899291992188,
+      "ppo_updates_after_credit": 3720
+    }
+  ]
+}
